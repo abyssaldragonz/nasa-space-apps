@@ -1,14 +1,15 @@
 import "./Bars.css";
-import ActivityIcon from "../../public/icons/ActivityIcon";
-import AlertIcon from "../../public/icons/AlertIcon";
-import FilterIcon from "../../public/icons/FilterIcon";
-import HomeIcon from "../../public/icons/HomeIcon";
-import MenuIcon from "../../public/icons/MenuIcon";
+import ActivityIcon from "../assets/icons/ActivityIcon";
+import AlertIcon from "../assets/icons/AlertIcon";
+import FilterIcon from "../assets/icons/FilterIcon";
+import HomeIcon from "../assets/icons/HomeIcon";
+import MenuIcon from "../assets/icons/MenuIcon";
+import { Link } from "react-router-dom";
 
-
-export default function Sidebar({selected}) {
+export default function Sidebar({selected, recall}) {
+    
     return (
-        <div class="sidebar">
+        <div className="sidebar">
             <HomeIcon color={selected=="home" ? "white" : "black"} />
             <ActivityIcon color={selected=="activity" ? "white" : "black"} />
             <AlertIcon color={selected=="alert" ? "white" : "black"} />

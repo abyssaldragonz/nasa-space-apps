@@ -1,9 +1,9 @@
 import Sidebar from "../components/Sidebar";
 
-export default function ActivityTab() {
+export default function AlertTab() {
     return (
         <div>
-            <Sidebar selected={"activity"} />
+            <Sidebar selected={"alert"} />
         </div>
     )
 }
