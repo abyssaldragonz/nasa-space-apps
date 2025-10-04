@@ -1,0 +1,13 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 3rem;
+    padding: 2rem;
+    align-content: space-between;
+    align-items: center;
+    left: 0;
+    margin-left: 0;
+    background-color: rgba(175,175,175, .5);
+    min-height: calc(100vh - 4rem);
+}
