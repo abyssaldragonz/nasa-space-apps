@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <div className="app">
-        <Sidebar selected={"home"} recall={setTab} />
+        <Sidebar selected={currTab} recall={setTab} />
         <div style={{display: "flex", flexDirection: "column", width: "100vh", margin: "3rem", gap: "3rem"}}>
           <UserInput />
 

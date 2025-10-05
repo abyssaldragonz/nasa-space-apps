@@ -14,6 +14,14 @@
     min-height: calc(100vh - 4rem);
 }
 
+.sidebar-btn, .sidebar-btn:active, .sidebar-btn:focus {
+    background-color: rgba(0,0,0, 0);
+    border: none;
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+}
+
 .user-input {
     left: 0;
     align-self: flex-start;
