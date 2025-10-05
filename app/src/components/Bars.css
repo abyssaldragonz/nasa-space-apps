@@ -1,4 +1,4 @@
-.sidebar {
+.sidebar, .deactive {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -12,6 +12,22 @@
     margin-left: 0;
     background-color: rgba(175,175,175, .5);
     min-height: calc(100vh - 4rem);
+}
+
+.sidebar-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-content: space-between;
+    align-items: center;
+}
+
+.btn-deactive {
+    display:none;
+}
+
+.deactive {
+    background-color: rgba(175, 175, 175, 0);
 }
 
 .sidebar-btn, .sidebar-btn:active, .sidebar-btn:focus {
