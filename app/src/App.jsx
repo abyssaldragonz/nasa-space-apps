@@ -12,7 +12,6 @@ import HomeTab from "./pages/HomeTab";
 
 function App() {
   const [currTab, setTab] = useState("home")
-  console.log(currTab)
 
   return (
     <>

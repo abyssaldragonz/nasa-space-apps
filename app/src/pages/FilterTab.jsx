@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import FilterCard from "../components/FilterCard";
 import WeatherCard from "../components/WeatherCard";
 import "./Pages.css";
@@ -11,10 +12,11 @@ export default function FilterTab() {
         {"name": "Outdoor Celebrations", "condition": "sunny"},
         {"name": "Indoor Activities", "condition": "rainy"}
     ];
-    
+
+    const [currEvent, setEvent] = useState("stargazing")
 
     return (
-        <div style={{display: "flex", justifyContent: "space-between"}}>
+        <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}>
             <div className="filter-container">
                 <h3 style={{lineHeight: 0}}>Events</h3>
                 <hr style={{border: "1px solid black", width: "100%"}} />
@@ -22,10 +24,19 @@ export default function FilterTab() {
                     <FilterCard key={index} prop={event} />
                 ))}
             </div>
+
+            <div style={{flexGrow: 1}}></div>
             
-            <div style={{display: "flex", flexDirection: "column"}}>
-                <h2>Best Day for: </h2>
-                <h2>Location: </h2>
+            <div style={{display: "flex", flexDirection: "column", gap: "1rem"}}>
+                <div style={{display: "flex", gap: "3rem"}}>
+                    <h2 style={{lineHeight: 0}}>Best Day for:</h2> 
+                    <button>{currEvent} &nbsp; ×</button>
+                    <h3> → DATE HERE</h3>
+                </div>
+                <div style={{display: "flex", gap: "3rem"}}>
+                    <h2 style={{lineHeight: 0}}>Location: </h2>
+                    <button>LOCATION HERE &nbsp; ×</button>
+                </div>
                 <WeatherCard />
             </div>
         </div>
