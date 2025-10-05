@@ -9,6 +9,7 @@
     background-color: rgba(255, 255, 255, .75);
     color: black;
     height: fit-content;
-    width: 15rem;
+    width: 25rem;
     border-radius: 2rem;
+    text-wrap: nowrap;
 }

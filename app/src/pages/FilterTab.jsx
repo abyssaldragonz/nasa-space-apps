@@ -16,7 +16,7 @@ export default function FilterTab() {
     const [currEvent, setEvent] = useState("stargazing")
 
     return (
-        <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}>
+        <div style={{display: "flex", justifyContent: "space-between", gap: "5rem", width: "100%"}}>
             <div className="filter-container">
                 <h3 style={{lineHeight: 0}}>Events</h3>
                 <hr style={{border: "1px solid black", width: "100%"}} />
@@ -24,19 +24,20 @@ export default function FilterTab() {
                     <FilterCard key={index} prop={event} />
                 ))}
             </div>
-
-            <div style={{flexGrow: 1}}></div>
             
-            <div style={{display: "flex", flexDirection: "column", gap: "1rem"}}>
-                <div style={{display: "flex", gap: "3rem"}}>
+            <div style={{display: "flex", flexDirection: "column", gap: "1rem", width: "fit-content"}}>
+                <div style={{display: "flex", gap: "3rem", textWrap: "nowrap"}}>
                     <h2 style={{lineHeight: 0}}>Best Day for:</h2> 
                     <button>{currEvent} &nbsp; ×</button>
-                    <h3> → DATE HERE</h3>
                 </div>
                 <div style={{display: "flex", gap: "3rem"}}>
                     <h2 style={{lineHeight: 0}}>Location: </h2>
                     <button>LOCATION HERE &nbsp; ×</button>
                 </div>
+            </div>
+
+            <div style={{display: "flex", flexDirection: "column", gap: "1rem"}}>
+                <h1>DATE HERE</h1>
                 <WeatherCard />
             </div>
         </div>
