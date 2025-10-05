@@ -18,28 +18,30 @@ function App() {
     <>
       <div className="app">
         <Sidebar selected={"home"} recall={setTab} />
+        <div style={{display: "flex", flexDirection: "column", width: "100vh", margin: "3rem", gap: "3rem"}}>
+          <UserInput />
 
-        <div>
-          {
-            currTab == "home" && 
-            <HomeTab />
-          }
+          <div>
+            {
+              currTab == "home" && 
+              <HomeTab />
+            }
 
-          {
-            currTab == "activity" && 
-            <ActivityTab />
-          }
+            {
+              currTab == "activity" && 
+              <ActivityTab />
+            }
 
-          {
-            currTab == "alert" && 
-            <AlertTab />
-          }
+            {
+              currTab == "alert" && 
+              <AlertTab />
+            }
 
-          {
-            currTab == "filter" && 
-            <FilterTab />
-          }
-
+            {
+              currTab == "filter" && 
+              <FilterTab />
+            }
+          </div>
         </div>
       </div>
     </>
