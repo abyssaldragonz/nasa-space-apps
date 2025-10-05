@@ -1,11 +1,11 @@
 import Sidebar from "../components/Sidebar";
-import Card from "../components/WeatherCard";
+import WeatherCard from "../components/WeatherCard";
 
 export default function HomeTab() {
     return (
         <div>
             
-            <Card />
+            <WeatherCard />
         </div>
     )
 }

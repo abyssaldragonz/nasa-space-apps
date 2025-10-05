@@ -1,0 +1,14 @@
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, .75);
+    color: black;
+    height: fit-content;
+    width: 15rem;
+    border-radius: 2rem;
+}

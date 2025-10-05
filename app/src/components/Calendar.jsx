@@ -4,5 +4,5 @@ import "react-datepicker/dist/react-datepicker.css";
 
 export default function Calendar() {
   const [startDate, setStartDate] = useState(new Date());
-  return <DatePicker id="calendar" selected={startDate} onChange={(date) => setStartDate(date)} />;
+  return <DatePicker showIcon id="calendar" selected={startDate} onChange={(date) => setStartDate(date)} />;
 };
