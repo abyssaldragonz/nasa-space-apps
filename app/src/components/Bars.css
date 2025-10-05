@@ -41,6 +41,9 @@
 .user-input {
     left: 0;
     align-self: flex-start;
+    display: flex;
+    gap: 2rem;
+    z-index: 1000;
 }
 
 #location-search {
@@ -51,4 +54,10 @@
     border-radius: 2rem;
     padding: 0 1rem;
     color: black;
+}
+
+#calendar {
+    background-color: white;
+    color: black;
+    border-radius: 2rem;
 }
